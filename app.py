@@ -34,7 +34,7 @@ if not GROQ_API_KEY:
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root():
-    return JSONResponse(status_code=200, content={"message": "WELCOME TO THE AI-DOCTOR (MEDICAL CHATBOT) ANALYZE IMAGE APPLICATION API!"})
+    return JSONResponse(status_code=200, content={"message": "WELCOME TO THE AI-POWERED IMAGE ANALYZE APPLICATION API!"})
 
 @app.post("/upload_and_query")
 async def upload_and_query(image: UploadFile = File(...), query: str = Form(...)):
