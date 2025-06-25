@@ -1,0 +1,10 @@
+streamlit
+fastapi
+uvicorn
+requests
+PIL
+base64
+dotenv
+logging
+io
+os
